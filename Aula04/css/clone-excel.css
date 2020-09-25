@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html, body {
+    height: 100%;
+}
+::selection {
+    background: #217346;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #363636;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #217346;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+table {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 20px black;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid gray;
+}
+th {
+    padding: 2px;
+    color: white;
+    cursor: all-scroll;
+    border: 2px solid #191919;
+    background-color: #363636;
+}
+div.th-content {
+    overflow: auto;
+    resize: horizontal;
+}
+th:hover {
+    background-color: #217346;
+}
+td {
+    text-align: center;
+    cursor: cell;
+}
+div.td-content {
+    width: 100px;
+    min-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+td:hover {
+    box-shadow: 0 0 0 2px #217346;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+tr:hover {
+    background-color: #00000056;
+}
+.first {
+    max-width: 30px;
+    color: white;
+    resize: none;
+    border: 2px solid #191919;
+    background-color: #363636;
+}
+.first:hover {
+    cursor: default;
+    box-shadow: 0 0 0 black;
+    background-color: #363636;
+}
+.control {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    color: white;
+    background-color: #363636;
+}
+input {
+    width: 80%;
+    margin: 2px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #217346;
+    border-radius: 20px;
+}
+.td-input {
+    width: 95%;     
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 0 0 8px #217346;
+}
+button {
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: #217346;
+}
+button:hover {
+    transition: .4s;
+    box-shadow: 0px 0px 20px black;
+}
+button:not(hover) {
+    transition: .4s;
+}

@@ -19,7 +19,7 @@ body {
 }
 form {
     position: relative;
-    width: 420px;
+    width: 380px;
     padding: 25px;
     border-radius: 20px;
     background: linear-gradient(to bottom, black, transparent);
@@ -33,48 +33,53 @@ img {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.466);
 }
-label {
-    width: 70%;
+.input-block {
+    position: relative;
+    width: 85%;
+    margin: 4px;
+    padding: 4px;
+}
+.textarea {
+    height: 100px;
 }
 input, textarea {
-    width: 70%;
-    margin: 2px;
+    position: absolute;
+    right: 0;
     padding: 7px;
-    text-align: center;
     outline: none;
-    border: 1px solid crimson;
+    text-align: center;
     border-radius: 10px;
 }
+input:focus, textarea:focus {
+    animation: agitar .2s ease-in;
+    box-shadow: 0px 0px 0px 3px rgb(45, 3, 92);
+}
 textarea {
-    resize: vertical;
-    height: 80px;
-    max-height: 120px;
+    resize: none;
+    width: 200px;
+    height: 100px;
     text-align: left;
 }
-input:hover {
-    transition: .4s;
-    scale: 1.04;
-}
-input:not(hover) {
-    transition: .4s;
-}
-input:focus {
-    transition: .4s;
-    opacity: 80%;
-    scale: 1.04;
-    box-shadow: 0px 0px 10px yellowgreen;
-}
-input[type=submit] {
-    width: 72%;
-    margin: 10px;
+button {
+    width: 100%;
+    margin: 20px;
     padding: 12px;
     cursor: pointer;
 }
-input[type=submit]:hover {
+button:hover {
     transition: .4s;
     color: white;
     background-color: crimson;
 }
-input[type=submit]:not(hover) {
+button:not(hover) {
     transition: .7s;
+}
+
+@keyframes agitar {
+    from {
+        box-shadow: 0px 0px 10px white;
+        right: 5px;
+    } to {
+        right: -5px;
+    }
 }

@@ -1,15 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     height: 100vh;
-    background-image: url(../images/global.png);
-    background-size: 450px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .center {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+img {
+    animation: girar infinite 60s linear;
+    position: absolute;
+    width: 100%;
+    max-width: 450px;
 }
 .box {
     width: 320px;
@@ -29,4 +36,12 @@ body {
 }
 p {
     letter-spacing: 10px;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
 }

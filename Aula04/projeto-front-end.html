@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Excel</title>
+    <link rel="stylesheet" href="css/clone-excel.css">
+</head>
+<body class="center">
+
+    <nav class="help">
+        <h1>Clone Excel</h1>
+        <ul>
+            <li>Crie um planilha setando a quantidade de colunas e linhas na caixa localizada no canto inferior direito da página.</li>
+            <li>As células da planilha gerada podem ser preenchidas com dados. Dê um <strong>click duplo</strong> em uma célula para testar.</li>
+            <li>Durante a inserção de dados, a tecla <strong>"enter"</strong> fixa o valor digitado na célula</li>
+            <li>Durante a inserção de dados, a tecla <strong>"esc"</strong> retorna o valor anterior da célula</li>
+            <li>Os cabeçalhos são redimensionáveis.</li>
+        </ul>
+    </nav>
+
+    <table></table>
+
+    <div class="center window">
+        <div class="close">X</div>
+        <form method="GET" class="center control">
+            <input type="number" id="cols" placeholder="Colunas" required>
+            <input type="number" id="rows" placeholder="Linhas" required>
+            <button class="create">CRIAR PLANILHA</button>
+            <div class="colxrow"></div>
+        </form>
+    </div>
+
+    <script src="js/clone-excel.js"></script>
+</body>
+</html>

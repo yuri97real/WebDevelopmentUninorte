@@ -1,10 +1,10 @@
 table {
-    width: 50%;
+    width: 600px;
     padding: 5px;
     text-align: center;
     box-shadow: 0px 0px 10px black;
 }
-th, .first {
+thead th, td:nth-child(1), tfoot td {
     color: white;
     background-color: cadetblue;
 }
@@ -12,7 +12,6 @@ th, td {
     padding: 5px;
 }
 tr:hover {
-    transition: .4s;
     color: white;
     background-color: rgba(0, 0, 0, 0.281);
 }
@@ -20,9 +19,9 @@ tr:not(hover) {
     transition: .2s;
 }
 tr:nth-child(even) {
-    background-color: rgb(110, 110, 110);
+    background-color: rgba(95, 158, 160, 0.5);
 }
-td:hover {
+tbody td:hover {
     color: black;
     cursor: pointer;
     box-shadow: 0px 0px 10px black;

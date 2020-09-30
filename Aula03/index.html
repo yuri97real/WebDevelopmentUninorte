@@ -10,23 +10,29 @@
     <form action="" method="post" class="center">
 
         <img src="images/profile.svg" alt="Usuário">
-
-        <label for="nome">Nome Completo</label>
-        <input type="text" name="nome" id="nome" placeholder="NOME" required>
         
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required>
+        <div class="input-block">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" placeholder="Ex:. João Silva, Marcos Castro, Pedro..." autocomplete="off" required>
+        </div>
+        <div class="input-block">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Ex:. seuemail@email.com" autocomplete="off" required>
+        </div>
+        <div class="input-block">
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Ex:. Rua 1, Centro" autocomplete="off" required>
+        </div>
+        <div class="input-block">
+            <label for="celular">Celular:</label>
+            <input type="tel" name="celular" id="celular" placeholder="Ex:. (xx) xxxx-xxxx" autocomplete="off" required>
+        </div>
+        <div class="input-block textarea">
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="" id="mensagem" cols="30" rows="10"></textarea>
+        </div>
         
-        <label for="endereco">Endereço</label>
-        <input type="text" name="endereco" id="endereco" required>
-        
-        <label for="celular">Celular</label>
-        <input type="tel" name="celular" id="celular" required>
-        
-        <label for="mensagem">Mensagem</label>
-        <textarea name="" id="mensagem" cols="30" rows="10"></textarea>
-
-        <input type="submit" id="submit" value="ENVIAR">
+        <button type="submit">ENVIAR</button>
     </form>
 
     <script src="js/form.js"></script>

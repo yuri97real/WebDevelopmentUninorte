@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <style>
+        body {
+            background-color: darkslateblue;
+            color: white;
+            text-align: center;
+        }
+        figure {
+            display: inline-block;
+            padding: 10px;
+            border: 5px solid dimgray;
+        }
         img {
             width: 320px;
-            border-radius: 50%;
-            box-shadow: 0px 0px 10px black;
         }
         .box {
-            display: inline-block;
-            width: 150px;
-            height: 120px;
             padding: 10px;
             border-radius: 20px;
-            text-align: center;
-            background-color: cadetblue;
-        }
-        .box:hover {
-            transition: .4s;
-            scale: 1.4;
-        }
-        .box:not(hover) {
-            transition: .4s;
+            background-color: dimgray;
         }
     </style>
 </head>
 <body>
     <h1>Welcome!</h1>
-    <img src="images/me.jpeg" alt="Minha Foto">
+    <figure>
+        <img src="images/me.jpeg" alt="Minha Foto">
+        <figcaption>Yuri Seabra da Silva</figcaption>
+    </figure>
     <div class="box">
-        <p>Olá, esse sou eu... Sou estudante de <em>Engenharia da Computação</em> na <strong>Uninorte</strong></p>
+        <p>Olá, esse sou eu... estudo <em>Engenharia da Computação</em> na <strong>Uninorte</strong></p>
     </div>
 </body>
 </html>

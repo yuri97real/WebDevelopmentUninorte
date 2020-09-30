@@ -1,5 +1,10 @@
 const create = document.querySelector(".create")
-//document.querySelectorAll("tr")[3].cells[3]
+const btnClose = document.querySelector(".close")
+
+btnClose.addEventListener("click", e => {
+    const control = document.querySelector(".window")
+    control.classList.toggle("hide")
+})
 
 create.addEventListener("click", (e) => {
     const table = document.querySelector("table")
@@ -16,7 +21,7 @@ function createTable(table) {
     const rows = document.querySelector("#rows")
     const alpha =   [   "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
                         "AA", "AB", "AC", "AD", "AE", "AF", "AG", "AH", "AI", "AJ", "AK", "AL", "AM", "AN", "AO", "AP", "AQ", "AR", "AS", "AT", "AU", "AV", "AW", "AX", "AY", "AZ"
-                    ] //encontrar solução
+                    ] //encontrar solução melhor
 
     let tr = document.createElement("tr")
     let numCols = parseInt(cols.value) + 1
